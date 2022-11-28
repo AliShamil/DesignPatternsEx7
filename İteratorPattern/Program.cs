@@ -81,12 +81,21 @@ class Program
         StudentCollection students = new();
         students.Add(new Student { Id = 1, Name = "Niko", Surname = "Akremi" });
         students.Add(new Student { Id = 2, Name = "Kenan", Surname = "Muradov" });
-        students.Add(new Student { Id = 2, Name = "Samir", Surname = "Purrengi" });
+        students.Add(new Student { Id = 3, Name = "Samir", Surname = "Purrengi" });
+
+
 
         foreach (var item in students)
         {
             Console.WriteLine(item);
         }
 
+        students[2]= new() { Id = 15, Name= "Ali", Surname = "Shamilzade" };
+        Console.WriteLine();
+
+        foreach (var item in students)
+        {
+            Console.WriteLine(item);
+        }
     }
 }
